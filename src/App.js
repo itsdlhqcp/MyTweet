@@ -1,12 +1,24 @@
 import React from 'react';
-import './styles/main.scss'
+import './styles/main.scss';
 import 'rsuite/dist/rsuite.min.css';
+import { Routes, Route } from 'react-router-dom';
+import SignIn from './pages/SignIn';
+import Home from './pages/Home';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
-    <div>
-      Hello world
-    </div>
+    <Routes>
+      <Route path='/signin' element={<SignIn />} />
+      <Route 
+        path='/' 
+        element={
+          <PrivateRoute>
+            <Home />
+          </PrivateRoute>
+        } 
+      />
+    </Routes>
   );
 }
 
