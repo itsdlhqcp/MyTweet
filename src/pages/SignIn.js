@@ -33,7 +33,7 @@ const SignIn = () => {
               </div>
               
              
-              <div className="text-center mt-4">
+              <div className="text-center mt-3">
                 <TwitterIcon style={{ fontSize: '2rem', color: '#1DA1F2' }} />  
               </div>
             </Panel>
