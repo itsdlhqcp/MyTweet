@@ -117,7 +117,7 @@ import TwitterIcon from '@rsuite/icons/legacy/Twitter';
 
 // Helper to construct Twitter OAuth URL
 const REACT_APP_TWITTER_CLIENT_ID='MmsxeUVOTGtwQ2pmT0FCc29RMVA6MTpjaQ'
-const REACT_APP_TWITTER_CLIENT_SECRET= 'CkrFcqbYo5KX1ZGtUyAjI8OskDcjNEIibYdFA5FfB9qlO_7kMD'
+const REACT_APP_TWITTER_CLIENT_SECRET= 'mQIfccqsCdfd77ub5rbcbDcwdXWPdWhRez9fjXNs5q7rBBteY'
 const TWITTER_STATE = "twitter-increaser-state";
 const TWITTER_CODE_CHALLENGE = "challenge";
 const TWITTER_AUTH_URL = "https://twitter.com/i/oauth2/authorize";
@@ -158,7 +158,7 @@ const SignIn = () => {
 
   // Function to exchange authorization code for access token
   const exchangeCodeForToken = async (authorizationCode) => {
-    const tokenUrl = 'https://api.twitter.com/2/oauth2/token';
+    const tokenUrl = 'https://cors-anywhere-ni7t.onrender.com/https://api.twitter.com/2/oauth2/token';
 
     const body = new URLSearchParams({
       code: authorizationCode,
