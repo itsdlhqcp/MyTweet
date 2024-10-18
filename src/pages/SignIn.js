@@ -1,14 +1,15 @@
 import React from 'react';
 import { Button, Col, Container, Grid, Panel, Row } from 'rsuite';
+import TwitterIcon from '@rsuite/icons/legacy/Twitter';  
 
 const SignIn = () => {
 
    const signInWithProvider = (provider) => {
-
+      // Add your sign-in logic here
    }
 
    const onXLogin = () => {
-      signInWithProvider()
+      signInWithProvider();
    }
 
   return (
@@ -25,10 +26,15 @@ const SignIn = () => {
               <div className="mt-3">
                 <Button
                   block
-                  style={{ backgroundColor: '#1DA1F2', color: 'black', font: 'bold' }}  
+                  style={{ backgroundColor: '#1DA1F2', color: 'black', fontWeight: 'bold' }}  
                 >
                   Sign In with Twitter
                 </Button>
+              </div>
+              
+             
+              <div className="text-center mt-4">
+                <TwitterIcon style={{ fontSize: '2rem', color: '#1DA1F2' }} />  
               </div>
             </Panel>
           </Col>
