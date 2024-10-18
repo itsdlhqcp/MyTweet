@@ -158,7 +158,7 @@ const SignIn = () => {
 
   // Function to exchange authorization code for access token
   const exchangeCodeForToken = async (authorizationCode) => {
-    const tokenUrl = 'https://cors-anywhere-ni7t.onrender.com/https://api.twitter.com/2/oauth2/token';
+    const tokenUrl = 'https://api.twitter.com/2/oauth2/token';
 
     const body = new URLSearchParams({
       code: authorizationCode,
