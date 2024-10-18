@@ -163,10 +163,10 @@ const SignIn = () => {
     const body = new URLSearchParams({
       code: authorizationCode,
       grant_type: 'authorization_code',
-      client_id: process.env.REACT_APP_TWITTER_CLIENT_ID,
+      client_id: REACT_APP_TWITTER_CLIENT_ID,
       client_secret: REACT_APP_TWITTER_CLIENT_SECRET,
       redirect_uri: CALLBACK_URL,
-      code_verifier: TWITTER_CODE_CHALLENGE, // PKCE requirement
+      code_verifier: TWITTER_CODE_CHALLENGE, 
     });
 
     try {
@@ -179,7 +179,7 @@ const SignIn = () => {
       });
 
       const data = await response.json();
-
+      console.log('Response Data:', data);
       if (data.access_token) {
         // Store the access token in localStorage
         localStorage.setItem('twitter_access_token', data.access_token);
@@ -203,6 +203,7 @@ const SignIn = () => {
       // Exchange the authorization code for an access token
       exchangeCodeForToken(authorizationCode);
       console.log('auth success');
+      
     }
   }, []);
 
