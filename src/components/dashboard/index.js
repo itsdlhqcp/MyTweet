@@ -14,11 +14,9 @@ const Dashboard = () => {
       </div>
 
       <Drawer.Body>
-        <Drawer.Footer>
-          <Button block style={{ backgroundColor: 'red', color: 'white' }}>
-            Sign Out
-          </Button>
-        </Drawer.Footer>
+        <Button block style={{ backgroundColor: 'red', color: 'white', marginTop: '20px' }}>
+          Sign Out
+        </Button>
       </Drawer.Body>
     </>
   );

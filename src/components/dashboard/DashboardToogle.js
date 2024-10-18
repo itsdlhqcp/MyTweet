@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { Button, Drawer } from 'rsuite';
 import DashboardIcon from '@rsuite/icons/legacy/Dashboard';
 import { useMediaQuery, useModalState } from '../../misc/custom-hooks';

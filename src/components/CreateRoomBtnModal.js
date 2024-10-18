@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Form, Modal } from 'rsuite';
 import PlusIcon from '@rsuite/icons/legacy/Plus';
 import CameraRetroIcon from '@rsuite/icons/legacy/CameraRetro';
-import { useModalState } from '../../misc/custom-hooks';
+import { useModalState } from '../misc/custom-hooks';
 import FormGroup from 'rsuite/esm/FormGroup';
 
 const CreateRoomBtnModal = () => {
